@@ -1,4 +1,9 @@
-let a = 5;
-let b = 10;
+const express = require("express");
 
-console.log(a+b);
+const app = express(); 
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+  
+app.listen(80, () => console.log("port open"));
