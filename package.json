@@ -1,0 +1,22 @@
+{
+  "name": "firstrep",
+  "version": "1.0.0",
+  "description": "ghlee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghlee0303/firstrep.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "ghlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghlee0303/firstrep/issues"
+  },
+  "homepage": "https://github.com/ghlee0303/firstrep#readme"
+}
