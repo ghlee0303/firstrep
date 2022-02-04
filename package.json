@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ghlee0303/firstrep/issues"
   },
-  "homepage": "https://github.com/ghlee0303/firstrep#readme"
+  "homepage": "https://github.com/ghlee0303/firstrep#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
