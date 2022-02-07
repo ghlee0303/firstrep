@@ -20,6 +20,7 @@ router.route('/')
                 name: req.body.name,
                 address: req.body.address,
             });
+            res.redirect('/');
         } catch (err) {
             console.log(err);
             next(err);
