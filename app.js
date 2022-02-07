@@ -10,6 +10,7 @@ nunjucks.configure('views', {
     express: app,
     watch: true
 });
+app.use(express.static('style'));
 
 sequelize.sync({ force: false })
     .then(() => {
