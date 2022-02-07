@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "node",
-    "password": "1111",
+    "username": "root",
+    "password": "1234",
     "database": "Express",
     "host": "127.0.0.1",
     "dialect": "mysql"
