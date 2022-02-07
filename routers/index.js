@@ -13,6 +13,17 @@ router.route('/')
             console.log(err);
             next(err);
         }
+    })
+    .post(async (req, res, next) => {
+        try {
+            User.create({
+                name: req.body.name,
+                address: req.body.address,
+            });
+        } catch (err) {
+            console.log(err);
+            next(err);
+        }
     });
 
 
