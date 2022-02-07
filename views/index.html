@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="h-100">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
   </head>
-  <body>
-    <form method="post" action="/">
-        <input type="text" name="name" placeholder="이름">
-        <input type="text" name="address" placeholder="주소">
-        <input type="submit" value="회원 가입">
-    </form>
-    <br>
-    회원목록
-    <br>
-    {% for user in Users %}
-    <li>{{user.id}} | {{user.name}} | {{user.address}}</li>
-    {% endfor %}
+  <style>
+      .table2 {
+          width: 70%;
+          margin-top: 3%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .nav_text {
+          font-size: 30px;
+          margin-left: 2%;
+      }
+      .nav_form {
+          margin-right: 2%;
+      }
+    </style>
+  </style>
+  
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-dark bg-dark" style="height: 9%">
+        <div class="container-fluid">
+            <a class="navbar-brand nav_text">회원 목록</a>
+            <form class="d-flex nav_form" method="post" action="/">
+                <input class="form-control me-2" type="text" placeholder="이름" name="name">
+                <input class="form-control me-2" type="text" placeholder="주소" name="address">
+                <input class="btn btn-outline-light" type="submit" value="회원 가입">
+            </form>
+        </div>
+    </nav>
+
+    <div class="table2">
+        <h2>회원 목록</h2>
+        <br>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">address</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for user in Users %}
+              <tr>
+                <th>{{user.id}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.address}}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
   </body>
+  <footer class="footer mt-auto py-3 bg-dark" style="height: 5%">
+    <div class="container">
+    </div>
+  </footer>
+  
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </html>
 
