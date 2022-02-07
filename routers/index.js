@@ -8,7 +8,7 @@ router.route('/')
     .get(async (req, res, next) => {
         try {
             contents = await User.findAll({});
-            res.render('index');
+            res.render('index', { Users : contents});
         } catch (err) {
             console.log(err);
             next(err);

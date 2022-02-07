@@ -5,7 +5,10 @@
     <title></title>
   </head>
   <body>
-    hello world!
+    {% for user in Users %}
+    <li>{{user.id}} | {{user.name}} | {{user.address}}</li>
+    {% endfor %}
+    <br>
   </body>
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </html>
